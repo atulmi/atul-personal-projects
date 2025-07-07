@@ -2,7 +2,7 @@
 # As a command-line argument, provide the name of the country as given in the URL for that country, on the website http://countrystudies.us
 
 # Example usage for https://countrystudies.us/germany:
-# python3 parse-country-study.py germany
+# python3 parse-country-studies.py germany
 
 import requests
 import sys
