@@ -2,7 +2,7 @@
 # For each book, a docx will be generated with "Intro, Chapter 1, Chapter 2... Conclusion" all on separate lines
 # As a command-line argument, we pass a spreadsheet, where each row has 2 items: book title & its number of chapters
 # The program is fully local, so the generated docx files won't be uploaded to the cloud unless we explicitly upload them (or have some sort of automated backup service)
-# Usage: "python3 generate-page-book-docx.py ~/Documents/Books/book-title-spreadsheet.xlsx"
+# Usage: "python3 generate-book-notes-chapter-template.py test-spreadsheet.xlsx"
 # Result: 1 note-taking template for each book listed in above spreadsheet will be created in CURRENT directory, unless a docx with that book already exists (we don't want to overwrite existing book note documents!)
 
 from docx import Document
