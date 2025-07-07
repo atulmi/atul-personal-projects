@@ -1,10 +1,10 @@
 # Goal of this program: generate a docx note-taking template for a set of PDF books in the given directory (passed as 1st argument on command-line)
 # Each docx will be populated with entries/headings for each block of "n" pages until final page count of book is reached (number of pages per block is provided as 2nd argument)
 
-# Example usage: "python3 generate-book-notes-page-blocks.py Example-PDF-Directory/ 20"
-
 # Ex: if n=20, the docx will have page block entries for pages "1-20", "21-40", "41-60"... "560-567", etc, all on separate lines. The page block entry/heading will be bolded
 # Ex: if n=1, the docx will have headings like "Page 1, Page 2, Page 3", etc, all on separate lines. The page entry/heading will be bolded
+
+# Example usage: "python3 generate-book-notes-page-blocks.py Example-PDF-Directory/ 20"
 # The docx templates will be created in CURRENT directory (not the given one), so the given directory (with PDF books) doesn't get cluttered with the note-taking templates
 
 # The program is fully local, so the PDF files won't be uploaded to the cloud unless we explicitly upload them (or have some sort of automated backup service)
