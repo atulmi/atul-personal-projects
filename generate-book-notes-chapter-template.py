@@ -13,7 +13,7 @@ import os
 
 document = Document()
 
-df = pd.read_excel(sys.argv[1])
+df = pd.read_excel(sys.argv[1], header=None)
 
 # Loop through all book titles listed in spreadsheet
 for i in range(len(df)):
