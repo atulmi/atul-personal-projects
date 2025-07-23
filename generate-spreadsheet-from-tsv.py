@@ -1,5 +1,6 @@
 # Goal of this program: generate a spreadsheet from a set of TSV (tab separated values) files
 # The spreadsheet will have separate tabs containing each file's content (with the tab name being same as filename)
+# Example usage: python3 generate-spreadsheet-from-tsv.py Book-List.tsv Articles-List.tsv Games-List.tsv
 
 import pandas as pd
 import sys
