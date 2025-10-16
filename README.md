@@ -29,9 +29,11 @@ This repo contains various Python side projects I've developed to make my life e
 - Goal of this program: generate a spreadsheet from a set of TSV (tab separated values) files
 - The spreadsheet will have separate tabs containing each file's content (with the tab name being same as filename)
 - Example usage: python3 generate-spreadsheet-from-tsv.py Book-List.tsv Articles-List.tsv Games-List.tsv
+- Result: a spreadsheet with tabs "Book-List", "Articles-List", and "Games-List", each containing the full content of the respective file
 
 ## parse-country-studies.py
-- Goal of this program: parse a Country Study book for a given country (published by Library of Congress) into a text file
+- Goal of this program: parse a Country Study page for a given country (published by Library of Congress) into a text file
 - As a command-line argument, provide the name of the country as given in the URL for that country, on the website http://countrystudies.us
 - Example usage for https://countrystudies.us/germany:
 - python3 parse-country-studies.py germany
+- Result: a file "germany.txt" containing the full content of the Library of Congress country study on Germany
