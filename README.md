@@ -33,6 +33,5 @@ This repo contains various Python side projects I've developed to make my life e
 ## parse-country-studies.py
 - Goal of this program: parse a Country Study book for a given country (published by Library of Congress) into a text file
 - As a command-line argument, provide the name of the country as given in the URL for that country, on the website http://countrystudies.us
-
 - Example usage for https://countrystudies.us/germany:
 - python3 parse-country-studies.py germany
