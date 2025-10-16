@@ -39,6 +39,12 @@ This repo contains various Python side projects I've developed to make my life e
 - Example usage: python3 generate-docx-from-titles-file.py Titles.txt
 - Result: a series of 100 page docx files is generated in the current directory, like "Titles-1.docx", "Titles-2.docx", etc
 
+## generate-daily-journal.py
+- Goal of this program: generate a docx for each month of the year, containing a page (with 15 blank bullet points) for each day of that month
+- This provides a bare-bones journaling template, useful if you find that most journaling apps are too complex
+- Example usage: python3 generate-daily-journal.py
+- Result: 12 docx files like "January-2025.docx", "February-2025.docx", etc with 1 page for each day
+
 ## parse-country-studies.py
 - Goal of this program: parse a Country Study page for a given country (published by Library of Congress) into a text file
 - As a command-line argument, provide the name of the country as given in the URL for that country, on the website http://countrystudies.us
