@@ -31,9 +31,24 @@ This repo contains various Python side projects I've developed to make my life e
 - Example usage: python3 generate-spreadsheet-from-tsv.py Book-List.tsv Articles-List.tsv Games-List.tsv
 - Result: a spreadsheet with tabs "Book-List", "Articles-List", and "Games-List", each containing the full content of the respective file
 
+## generate-docx-from-titles-file.py
+- Goal of this program: generate a series of docx files for a long list of titles
+- As a command-line argument, provide the titles file you want to read
+- Each docx will have 100 pages (corresponding to each block of 100 titles from the file)
+- Each docx will have the name of the titles file (along with a number indicating which series of 100 titles it coresponds to
+- Example usage: python3 generate-docx-from-titles-file.py Titles.txt
+- Result: a series of docx files is generated in the current directory, like "Titles-1.docx", "Titles-2.docx", etc
+
 ## parse-country-studies.py
 - Goal of this program: parse a Country Study page for a given country (published by Library of Congress) into a text file
 - As a command-line argument, provide the name of the country as given in the URL for that country, on the website http://countrystudies.us
 - Example usage for https://countrystudies.us/germany:
 - python3 parse-country-studies.py germany
 - Result: a file "germany.txt" containing the full content of the Library of Congress country study on Germany
+
+## wikipedia-fetch.py
+- Goal of this program: parse Wikipedia pages for all titles mentioned in a given Titles file, and save the full-text pages to the current directory
+- This is useful if you want to backup a specific set of Wikipedia articles (the officially provided backups for Wikipedia are massive and contain tons of info that most of us won't have time to read)
+- As a command-line argument, provide the titles file you want to read
+- Example usage: python3 wikipedia-fetch.py Titles.txt
+- Result: files generated in the current directory, corresponding to each title in "Titles.txt". Each file will contain the full text of the corresponding Wikipedia article
