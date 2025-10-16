@@ -34,10 +34,10 @@ This repo contains various Python side projects I've developed to make my life e
 ## generate-docx-from-titles-file.py
 - Goal of this program: generate a series of docx files for a long list of titles
 - As a command-line argument, provide the titles file you want to read
-- Each docx will have 100 pages (corresponding to each block of 100 titles from the file)
+- Each docx will have 100 pages (corresponding to each block of 100 titles from the file), with each page containing a title from the Titles file
 - Each docx will have the name of the titles file (along with a number indicating which series of 100 titles it coresponds to
 - Example usage: python3 generate-docx-from-titles-file.py Titles.txt
-- Result: a series of docx files is generated in the current directory, like "Titles-1.docx", "Titles-2.docx", etc
+- Result: a series of 100 page docx files is generated in the current directory, like "Titles-1.docx", "Titles-2.docx", etc
 
 ## parse-country-studies.py
 - Goal of this program: parse a Country Study page for a given country (published by Library of Congress) into a text file
