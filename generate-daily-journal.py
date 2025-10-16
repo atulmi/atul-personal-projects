@@ -30,7 +30,6 @@ for date in date_list:
         document = Document()
         current_month = month_name
 
-    
     formatted_date = date.strftime("%b %d, %Y")  # format as "Jan 01, 2025 or Jan 30, 2025, etc"    
     paragraph = document.add_paragraph()
 
@@ -38,13 +37,7 @@ for date in date_list:
     temp_runner.bold = True
     temp_runner.font.color.rgb = RGBColor(255, 0, 0)  # Make date header red
 
-    for i in range(15):
-        newParagraph = document.add_paragraph(style='ListBullet')
-        newParagraph.add_run("")
-        document.add_paragraph() # Empty line under bullet point to write stuff down
-
     document.add_page_break()
-
 
     sections = document.sections
 
@@ -56,4 +49,4 @@ for date in date_list:
        section.right_margin = Cm(0.1)
 
     # save to file with name corresponding to current_month (April, September, etc)
-    document.save(current_month + ".docx")
+    document.save(current_month + "-" + str(year) + ".docx")
